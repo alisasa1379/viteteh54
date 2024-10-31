@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="module" crossorigin src="./assets/index-BRZu1I5Z.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-k7U0vQEw.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- menu -->
+      <header>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">home</a>
+            </li>
+            <li>
+              <a href="#">product</a>
+            </li>
+            <li>
+              <a href="#">about</a>
+            </li>
+            <li>
+              <a href="#">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- end menu -->
+      <!-- slider -->
+      <div class="slider">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/slide1-B_smfxGX.jpg" alt="slider">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slide2-BMcVrbya.jpg" alt="slider">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/slide3-Dj-zk_Z8.jpg" alt="slider">
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- end slider -->
+       <!-- products -->
+        <div class="products" id="products"></div>
+       <!-- end products -->
+    </div>
+    <script src="./assets/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
